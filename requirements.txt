@@ -1,0 +1,8 @@
+flask
+transformers
+torch
+datasets
+spacy
+matplotlib
+pandas
+streamlit
