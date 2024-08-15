@@ -3,14 +3,32 @@
 
 ## Project Overview
 
-This project aims to perform market sentiment analysis by leveraging a pre-trained BERT model to analyze customer reviews and social media data. The project includes data collection, preprocessing, sentiment analysis, trend analysis, and deployment. The final product is a deployable model with a user-friendly front-end interface.
+This project is focused on analyzing market sentiment by leveraging a pre-trained BERT model. The project pipeline includes data collection, preprocessing, sentiment analysis, trend analysis, and deployment of the model with a user-friendly interface. The purpose of this project is to provide insights into customer sentiment trends over time, which can be valuable for businesses looking to improve customer satisfaction and make informed decisions.
 
-## Features
+## Tools and Technologies Used
 
-- **Data Collection and Preprocessing**: Collects and preprocesses datasets from sources like Amazon Reviews.
-- **Sentiment Analysis**: Uses a pre-trained BERT model to classify sentiments as Positive, Negative, or Neutral.
-- **Trend Analysis**: Visualizes sentiment trends over time to identify patterns.
-- **Deployment**: The model is deployed as an API with a Streamlit front-end for easy interaction.
+### Programming Language:
+- **Python**: The primary language used for developing the entire project.
+
+### Data Collection & Preprocessing:
+- **Hugging Face Datasets**: To download and handle large datasets like Amazon Reviews.
+- **SpaCy**: For text preprocessing, including tokenization, lemmatization, and stopword removal.
+- **Pandas**: For data manipulation and handling tabular data.
+
+### Model & Machine Learning:
+- **Transformers (Hugging Face)**: Utilized for loading and fine-tuning the pre-trained BERT model.
+- **PyTorch**: Backend framework used for model training and evaluation.
+
+### Data Visualization:
+- **Matplotlib**: For creating static plots and visualizations.
+- **Seaborn**: For enhanced data visualization and statistical plots.
+- **Plotly**: Used for creating interactive visualizations.
+
+### API & Deployment:
+- **Flask**: A lightweight WSGI web application framework used to deploy the sentiment analysis model as an API.
+- **Streamlit**: Used for creating a simple and interactive front-end interface for the project.
+- **Docker**: Containerization of the application to ensure consistency across different environments.
+- **Git/GitHub**: Version control and collaboration.
 
 ## Project Structure
 
@@ -28,7 +46,7 @@ market-sentiment-analysis/
 │   ├── trend_analysis.ipynb         # Trend analysis and visualization
 │
 ├── models/
-│   └── sentiment_model/             # Directory for storing the pre-trained model
+│   └── sentiment_model/             # Directory for storing the pre-trained model (ignored in Git)
 │
 ├── src/
 │   ├── data_preprocessing.py        # Script for data preprocessing
@@ -120,4 +138,4 @@ If you wish to contribute to this project, please fork the repository and submit
 
 ## Contact
 
-For any inquiries or issues, please contact [Lishwanth] at [lishwanthkumar@gmail.com].
+For any inquiries or issues, please contact lishwanth at lishwanthkumar@gmail.com.
